@@ -1,0 +1,15 @@
+{
+    "background_color": "#ffffff",
+    "name": "Sete Três",
+    "description": "",
+    "display": "standalone",
+    "icons": [{
+        "src": "/img/icon-512x512.png",
+        "sizes": "512x512"
+    }],
+    "start_url": "/",
+    "orientation": "portrait-primary",
+    "short_name": "Sete Três",
+    "theme_color": "#0074d9",
+    "version": "1.0.0"
+}

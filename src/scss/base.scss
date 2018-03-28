@@ -1,0 +1,168 @@
+@import 'variables';
+@import 'vendor/grid';
+
+a,
+input,
+select,
+textarea,
+button {
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0 none;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-color: $white;
+    font-size: 100%;
+}
+
+.body {
+    background-color: $white;
+    cursor: default;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-size-adjust: 100%;
+    transition: background-color $timing $easing-out ($delay * 7);
+}
+
+.background {
+    background-image: url('../img/inkstarter.gif');
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.canvas {
+    height: 100vh;
+    left: 0;
+    opacity: .3;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+.header {
+    &__title {
+        margin: 0;
+    }
+}
+
+.main {
+    .container {
+        height: 100vh;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.footer {
+    bottom: 30px;
+    justify-content: flex-end;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.movie-rating {
+    border: 2px solid $white;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    font-family: "Merriweather", sans-serif;
+
+    &__header,
+    &__footer {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__left {
+        align-items: center;
+        border-right: 2px solid $white;
+        display: flex;
+        color: $white;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1rem 2rem;
+        width: 30%;
+    }
+
+    &__right {
+        color: $white;
+        display: flex;
+        padding: 1rem 2rem;
+        font-family: "Oswald", sans-serif;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    &__footer {
+        border-top: 2px solid $white;
+        justify-content: space-between;
+    }
+
+    &__footer-left {
+        align-items: center;
+        color: $white;
+        displat: flex;
+        font-family: sans-serif;
+        font-weight: 900;
+        padding: .5rem 1rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__footer-right {
+        border-left: 2px solid $white;
+        padding: .5rem 1rem;
+
+        img {
+            height: 30px;
+            position: relative;
+            top: -2px;
+            vertical-align: middle;
+        }
+    }
+}
