@@ -41,6 +41,7 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
             h1.header__title
                 img(src='img/inkstarter.svg', alt='InkStarter')
         main#main.main.container
+            div
             .header-promo.widget.widget_text
                 .laurel-left
                     img(src='img/laurels.svg', alt='')
@@ -71,6 +72,8 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                         span Film Festival
                 .laurel-right
                     img(src='img/laurels.svg', alt='')
+            .fit-video(style='width: 100%')
+                iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/-lifSIr_dYg?listType=playlist&list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
         footer.footer
             .container
                 .row
@@ -78,13 +81,13 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                         .cust-quotes
                             blockquote(data-timeout='5000')
                                 p The best widget I've ever had
-                                cite John Doe
+                                cite - John Doe
                             blockquote(data-timeout='5000')
                                 p It was so good I bought one for my grandma
-                                cite Richard Lee
+                                cite - Richard Lee
                             blockquote(data-timeout='5000')
                                 p Can't wait until they release version 2!
-                                cite Samantha West
+                                cite - Samantha West
                     .col-md-6
                         .movie-rating
                             .movie-rating__header
