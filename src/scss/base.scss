@@ -181,7 +181,7 @@ html {
     }
 }
 
-.header-promo {
+.award {
     align-items: center;
     color: $white;
     display: flex;
@@ -198,11 +198,6 @@ html {
     text-align: center;
     vertical-align: middle;
 
-    .textwidget {
-        flex-grow: 5;
-        width: 80%;
-    }
-
     p {
         font-size: 1rem;
         line-height: 1rem;
@@ -214,8 +209,13 @@ html {
         font-weight: 400;
     }
 
-    .laurel-left,
-    .laurel-right {
+    &__text {
+        flex-grow: 5;
+        width: 80%;
+    }
+
+    &__left,
+    &__right {
         flex: 1 auto;
         flex-grow: 3;
         vertical-align: middle;
@@ -231,7 +231,7 @@ html {
         }
     }
 
-    .laurel-left {
+    &__left {
         justify-content: right;
 
         svg {
@@ -239,7 +239,7 @@ html {
         }
     }
 
-    .laurel-right {
+    &__right {
         filter: FlipH;
         transform: scaleX(-1);
     }
