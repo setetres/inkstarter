@@ -6,6 +6,7 @@ files:
         - 'src/scss/mixins/**/*.scss'
         - 'src/scss/vendor/**/*.scss'
 rules:
+    class-name-format: 0
     indentation:
         - 1
         -

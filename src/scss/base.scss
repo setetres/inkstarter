@@ -58,7 +58,6 @@ html {
 }
 
 .canvas {
-    display: none;
     height: 100vh;
     left: 0;
     opacity: .3;
@@ -83,18 +82,17 @@ html {
         margin: 0;
         max-width: 280px;
         width: 280px;
-
-        svg {
-        }
     }
 }
 
-.main.container {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    position: relative;
-    z-index: 3;
+.main {
+    &.container {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        position: relative;
+        z-index: 3;
+    }
 }
 
 .footer {
@@ -112,7 +110,7 @@ html {
     color: $black;
     display: flex;
     flex-direction: column;
-    font-family: "Merriweather", sans-serif;
+    font-family: 'Merriweather', sans-serif;
 
     &__header,
     &__footer {
@@ -124,30 +122,30 @@ html {
     &__left {
         align-items: center;
         border-right: 2px solid $white;
-        display: flex;
         color: $white;
-        justify-content: center;
-        text-transform: uppercase;
+        display: flex;
         font-size: 2.5rem;
-        text-align: center;
+        justify-content: center;
         padding: 1rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
         width: 30%;
     }
 
     &__right {
         color: $white;
         display: flex;
-        padding: 1rem 2rem;
-        font-family: "Oswald", sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-size: 1rem;
         line-height: 1.2rem;
+        padding: 1rem 2rem;
         text-transform: uppercase;
     }
 
     ul {
         list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0;
 
         li {
             display: inline-block;
@@ -162,7 +160,7 @@ html {
     &__footer-left {
         align-items: center;
         color: $white;
-        displat: flex;
+        display: flex;
         font-family: sans-serif;
         font-weight: 900;
         padding: .5rem 1rem;
@@ -188,16 +186,16 @@ html {
     color: $white;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    max-width: 200px;
     flex-flow: row no-wrap;
+    flex-wrap: nowrap;
     font-weight: 700;
     justify-content: space-around;
-    text-align: center;
-    padding: 1rem 0;
     margin: 0 auto;
     max-height: 200px;
+    max-width: 200px;
+    padding: 1rem 0;
     position: relative;
+    text-align: center;
     vertical-align: middle;
 
     .textwidget {
@@ -206,22 +204,22 @@ html {
     }
 
     p {
-        margin: 0;
         font-size: 1rem;
         line-height: 1rem;
+        margin: 0;
     }
 
     span {
-        font-weight: 400;
         font-size: 80%;
+        font-weight: 400;
     }
 
     .laurel-left,
     .laurel-right {
-        width: 10%;
-        flex-grow: 3;
         flex: 1 auto;
+        flex-grow: 3;
         vertical-align: middle;
+        width: 10%;
 
         svg {
             max-height: 120px;
@@ -242,15 +240,15 @@ html {
     }
 
     .laurel-right {
-        transform: scaleX(-1);
         filter: FlipH;
+        transform: scaleX(-1);
     }
 }
 
 .cust-quotes {
     color: $white;
-    height: 100%;
     font-size: 1.5rem;
+    height: 100%;
     line-height: 1.5rem;
     position: relative;
 
@@ -261,7 +259,7 @@ html {
         position: absolute;
         right: 0;
         text-align: left;
-        transition: opacity 0.5s $easing-out 0s, transform 0.5s $easing-in 0s;
+        transition: opacity .5s $easing-out 0ms, transform .5s $easing-in 0ms;
         z-index: 0;
 
         &:first-child {
@@ -271,7 +269,7 @@ html {
 
         &:first-child + blockquote {
             opacity: 1;
-            transition: opacity 1.6s ease 0s;
+            transition: opacity 1.6s ease 0ms;
             z-index: 1;
         }
 
@@ -280,11 +278,11 @@ html {
             font-weight: normal;
             margin-bottom: 10px;
 
-            &:before {
+            &::before {
                 content: '\201C';
             }
 
-            &:after {
+            &::after {
                 content: '\201D';
             }
         }
