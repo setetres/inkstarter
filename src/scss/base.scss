@@ -70,23 +70,38 @@ html {
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 2rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
     &__title {
         margin: 0;
+        max-width: 280px;
+        width: 280px;
+
+        svg {
+        }
     }
 }
 
-.main {
-    .container {
-        height: 100vh;
-        position: relative;
-        z-index: 3;
-    }
+.main.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
 }
 
 .footer {
-    bottom: 30px;
-    justify-content: flex-end;
+    bottom: 0;
     display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0;
     position: fixed;
     width: 100%;
     z-index: 3;
