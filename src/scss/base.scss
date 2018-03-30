@@ -58,6 +58,7 @@ html {
 }
 
 .canvas {
+    display: none;
     height: 100vh;
     left: 0;
     opacity: .3;
@@ -78,18 +79,24 @@ html {
     width: 100%;
     z-index: 3;
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__title {
         margin: 0;
-        max-width: 280px;
-        width: 280px;
+        max-width: 70%;
+        width: 50%;
     }
 }
 
 .main {
-    &.container {
+    .container {
         align-items: center;
         display: flex;
         height: 100vh;
+        justify-content: center;
         position: relative;
         z-index: 3;
     }
@@ -105,7 +112,7 @@ html {
     z-index: 3;
 }
 
-.movie-rating {
+.rating {
     border: 2px solid $white;
     color: $black;
     display: flex;
@@ -247,9 +254,9 @@ html {
 
 .cust-quotes {
     color: $white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     height: 100%;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     position: relative;
 
     blockquote {
@@ -259,7 +266,7 @@ html {
         position: absolute;
         right: 0;
         text-align: left;
-        transition: opacity .5s $easing-out 0ms, transform .5s $easing-in 0ms;
+        transition: opacity .5s $easing-out 0ms, transform .5s $easing-out 0ms;
         z-index: 0;
 
         &:first-child {
@@ -269,13 +276,13 @@ html {
 
         &:first-child + blockquote {
             opacity: 1;
-            transition: opacity 1.6s ease 0ms;
+            transition: opacity 1.6s ease 0ms, transform 1.6s ease 0ms;
             z-index: 1;
         }
 
         p {
             font-style: italic;
-            font-weight: normal;
+            font-weight: 700;
             margin-bottom: 10px;
 
             &::before {
@@ -288,6 +295,7 @@ html {
         }
 
         cite {
+            font-weight: 300;
             font-size: 80%;
             text-align: center;
         }

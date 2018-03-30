@@ -54,6 +54,16 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                         img(src='img/laurels.svg', alt='')
                     .award__text
                         p
+                            strong Another Some Crazy!
+                        p
+                            span Another Mini Festival
+                    .award__right
+                        img(src='img/laurels.svg', alt='')
+                .award
+                    .award__left
+                        img(src='img/laurels.svg', alt='')
+                    .award__text
+                        p
                             strong Another Some Crazyas uhas auhs aush asuh as!
                         p
                             span Another Mini Festival
@@ -69,12 +79,12 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                             span Film Festival
                     .award__right
                         img(src='img/laurels.svg', alt='')
-        main#main.main.container
-            div
+        main#main.main
+            .container
                 h1.header__title
                     img(src='img/inkstarter.svg', alt='InkStarter')
-            //- .fit-video(style='width: 100%')
-            //-     iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/-lifSIr_dYg?listType=playlist&list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                //- .fit-video(style='width: 100%')
+                //-     iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/-lifSIr_dYg?listType=playlist&list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
         footer.footer
             .container
                 .row
@@ -90,14 +100,14 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                                 p Can't wait until they release version 2!
                                 cite - Samantha West
                     .col-md-6
-                        .movie-rating
-                            .movie-rating__header
-                                span.movie-rating__left R
-                                span.movie-rating__right
+                        .rating
+                            .rating__header
+                                span.rating__left R
+                                span.rating__right
                                     | Disturbing elements, gore, self tattooing, art, lorem ipsum, gore, self tattooing, art, lorem.
-                            .movie-rating__footer
-                                .movie-rating__footer-left Restricted
-                                .movie-rating__footer-right
+                            .rating__footer
+                                .rating__footer-left Restricted
+                                .rating__footer-right
                                     img(src='img/mpaa.svg')
         script(src='/js/main.min.js')
         //- script.
