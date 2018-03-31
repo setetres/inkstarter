@@ -20,7 +20,7 @@
 
         function initQuoteCarousel() {
 
-            var $quotesWrapper = $(".cust-quotes");
+            var $quotesWrapper = $(".quotes");
             var $quotes = $quotesWrapper.find("blockquote");
 
             if (!$quotes.length) {
