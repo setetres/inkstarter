@@ -8,6 +8,14 @@
 
         FastClick.attach(document.body);
 
+        // Watch now
+
+        $('.js-watch').on('click', function() {
+            $('.fit-video').fitVids();
+            $('.fit-video').addClass('fit-video--active');
+            return false;
+        });
+
         // Load
 
         $(window).on('load', function() {
@@ -15,11 +23,10 @@
 
         // Resize
 
-        $(window).on('debouncedresize', function(){
+        $(window).on('debouncedresize', function() {
         });
 
         function initQuoteCarousel() {
-
             var $quotesWrapper = $(".quotes");
             var $quotes = $quotesWrapper.find("blockquote");
 
@@ -36,7 +43,7 @@
             setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
         }
 
-        $(function () {
+        $(function() {
             initQuoteCarousel();
         });
     });

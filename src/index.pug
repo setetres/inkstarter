@@ -37,6 +37,8 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
     body.body
         canvas#canvas.canvas
         .background
+        .fit-video
+            iframe(width='560', height='315', src='//www.youtube-nocookie.com/embed/-lifSIr_dYg?list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
         header.header
             .container
                 .award
@@ -85,9 +87,7 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                     img(src='img/inkstarter.svg', alt='InkStarter')
                 div.actions
                     a(href='#', target='_blank', rel='noopener') Making of
-                    a(href='#', target='_blank', rel='noopener') Watch Now
-                //- .fit-video(style='width: 100%')
-                //-     iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/-lifSIr_dYg?listType=playlist&list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0&showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                    a(href='#', class='js-watch') Watch Now
         footer.footer
             .container
                 .row
