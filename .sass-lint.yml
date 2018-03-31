@@ -7,6 +7,7 @@ files:
         - 'src/scss/vendor/**/*.scss'
 rules:
     class-name-format: 0
+    no-color-literals: 0
     indentation:
         - 1
         -
