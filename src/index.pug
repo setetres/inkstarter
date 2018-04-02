@@ -32,61 +32,67 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
         link(rel='apple-touch-icon', href='/img/apple-touch-icon.png')
         link(rel='icon', href='/favicon.ico')
         link(rel='stylesheet', href='/css/main.min.css')
-        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Merriweather:700|Oswald:400', rel='stylesheet')
 
     body.body
         canvas#canvas.canvas
         .background
         .fit-video
+            span.fit-video__close
             iframe(width='560', height='315', src='//www.youtube-nocookie.com/embed/-lifSIr_dYg?list=PLWjcKkvgds-9ZzcLos7rRJTS_MmE7Rhtm&rel=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
         header.header
             .container
-                .award
-                    .award__left
-                        img(src='img/laurels.svg', alt='')
-                    .award__text
-                        p
-                            strong Smallest Gallery Film Festival
-                        p
-                            span Best Picture
-                    .award__right
-                        img(src='img/laurels.svg', alt='')
-                .award
-                    .award__left
-                        img(src='img/laurels.svg', alt='')
-                    .award__text
-                        p
-                            strong Sundae Dance Icecream Festival
-                        p
-                            span Best Actor/Director
-                    .award__right
-                        img(src='img/laurels.svg', alt='')
-                .award
-                    .award__left
-                        img(src='img/laurels.svg', alt='')
-                    .award__text
-                        p
-                            strong 11th Eye Globe Tattoo Awards
-                        p
-                            span Best Drawings
-                    .award__right
-                        img(src='img/laurels.svg', alt='')
-                .award
-                    .award__left
-                        img(src='img/laurels.svg', alt='')
-                    .award__text
-                        p
-                            strong Weeeblyboo Awards
-                        p
-                            span Best Wesbite
-                    .award__right
-                        img(src='img/laurels.svg', alt='')
+                .row
+                    .col-md-3.col-sm-6
+                        .award
+                            .award__left
+                                img(src='img/laurels.svg', alt='')
+                            .award__text
+                                p
+                                    strong Smallest Gallery Film Festival
+                                p
+                                    span Best Picture
+                            .award__right
+                                img(src='img/laurels.svg', alt='')
+                    .col-md-3.col-sm-6
+                        .award
+                            .award__left
+                                img(src='img/laurels.svg', alt='')
+                            .award__text
+                                p
+                                    strong Sundae Dance Icecream Festival
+                                p
+                                    span Best Actor/Director
+                            .award__right
+                                img(src='img/laurels.svg', alt='')
+                    .col-md-3.col-sm-6
+                        .award
+                            .award__left
+                                img(src='img/laurels.svg', alt='')
+                            .award__text
+                                p
+                                    strong 11th Eye Globe Tattoo Awards
+                                p
+                                    span Best Drawings
+                            .award__right
+                                img(src='img/laurels.svg', alt='')
+                    .col-md-3.col-sm-6
+                        .award
+                            .award__left
+                                img(src='img/laurels.svg', alt='')
+                            .award__text
+                                p
+                                    strong Weeeblyboo Awards
+                                p
+                                    span Best Wesbite
+                            .award__right
+                                img(src='img/laurels.svg', alt='')
         main#main.main
             .container
                 h1.title
                     img(src='img/inkstarter.svg', alt='InkStarter')
                 div.actions
-                    a(href='#', target='_blank', rel='noopener') Making of
+                    //- a(href='#', target='_blank', rel='noopener') Making of
                     a(href='#', class='js-watch') Watch Now
         footer.footer
             .container
@@ -110,7 +116,7 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
                             .rating__header
                                 span.rating__left R
                                 span.rating__right
-                                    | Disturbing elements, gore, self tattooing, art, lorem ipsum, gore, self tattooing, art, lorem.
+                                    | Gore, self tattooing, phallic drawings, design. Caution: May cause seizure.
                             .rating__footer
                                 .rating__footer-left Restricted
                                 .rating__footer-right
@@ -125,5 +131,5 @@ html(lang='en', itemscope='', itemtype='http://schema.org')
         //-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         //-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         //-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        //-     ga('create', 'UA-6977973-1', 'auto');
+        //-     ga('create', 'UA-6977973-14', 'auto');
         //-     ga('send', 'pageview');

@@ -16,6 +16,11 @@
             return false;
         });
 
+        $('.fit-video__close').on('click', function() {
+            $('.fit-video').removeClass('fit-video--active');
+            return false;
+        });
+
         // Load
 
         $(window).on('load', function() {
@@ -25,6 +30,8 @@
 
         $(window).on('debouncedresize', function() {
         });
+
+        // Quotes
 
         function initQuoteCarousel() {
             var $quotesWrapper = $(".quotes");

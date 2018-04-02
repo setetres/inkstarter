@@ -78,12 +78,6 @@ html {
     top: 0;
     width: 100%;
     z-index: 3;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
 }
 
 .main {
@@ -148,18 +142,17 @@ html {
     width: 100%;
     z-index: 10000;
 
-    // .fluid-width-video-wrapper {
-    //     transition: transform $timing $easing-out;
-    //     transform: scale(.8);
-    // }
+    &__close {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
 
     &--active {
         opacity: 1;
         pointer-events: all;
-
-        // .fluid-width-video-wrapper {
-        //     transform: scale(1);
-        // }
     }
 }
 
@@ -193,6 +186,7 @@ html {
         color: $white;
         display: flex;
         font-size: 2.5rem;
+        font-weight: 700;
         justify-content: center;
         padding: 1rem 2rem;
         text-align: center;
@@ -205,6 +199,7 @@ html {
         display: flex;
         font-family: 'Oswald', sans-serif;
         font-size: 1rem;
+        font-weight: 400;
         line-height: 1.2rem;
         padding: 1rem 2rem;
         text-transform: uppercase;
@@ -232,7 +227,7 @@ html {
         display: flex;
         flex: 2;
         font-family: sans-serif;
-        font-weight: 900;
+        font-weight: 700;
         justify-content: center;
         padding: .5rem 1rem;
         text-transform: capitalize;
@@ -280,6 +275,7 @@ html {
 
     &__text {
         flex-grow: 5;
+        padding: 0;
         width: 80%;
     }
 
@@ -328,7 +324,7 @@ html {
         position: absolute;
         right: 0;
         text-align: left;
-        transition: opacity .5s $easing-out 0ms, transform .5s $easing-out 0ms;
+        transition: opacity $timing $easing-out 0ms, transform $timing $easing-out 0ms;
         z-index: 0;
 
         &:first-child {
@@ -338,7 +334,7 @@ html {
 
         &:first-child + blockquote {
             opacity: 1;
-            transition: opacity 1.6s ease 0ms, transform 1.6s ease 0ms;
+            transition: opacity ($timing * 3) $easing-out 0ms, transform ($timing * 3) $easing-out 0ms;
             z-index: 1;
         }
 
