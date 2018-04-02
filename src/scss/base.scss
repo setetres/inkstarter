@@ -57,44 +57,50 @@ html {
     z-index: 1;
 }
 
-.canvas {
-    display: none;
-    height: 100vh;
-    left: 0;
-    opacity: .3;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 2;
-}
-
 .header {
     display: flex;
     justify-content: center;
     left: 0;
-    margin: 2rem 0;
-    position: fixed;
+    padding: 15px 0;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 3;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        padding: 2rem 0;
+        position: fixed;
+    }
 }
 
 .main {
+    margin: 0 0 30px;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        margin: 0;
+    }
+
     .title {
-        margin: 0 0 60px;
-        max-width: 70%;
-        width: 50%;
+        margin: 0 0 30px;
+        width: 300px;
+
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            margin: 0 0 60px;
+        }
     }
 
     .container {
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         justify-content: center;
         position: relative;
         z-index: 3;
+
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            height: 100vh;
+        }
     }
 
     .actions {
@@ -131,7 +137,7 @@ html {
     align-items: center;
     background-color: rgba($black, .7);
     display: flex;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     opacity: 0;
     padding: 10%;
@@ -139,7 +145,7 @@ html {
     position: fixed;
     top: 0;
     transition: opacity $timing $easing-out;
-    width: 100%;
+    width: 100vw;
     z-index: 10000;
 
     &__close {
@@ -158,12 +164,15 @@ html {
 
 .footer {
     bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin: 2rem 0;
-    position: fixed;
+    padding: 15px 0;
+    position: relative;
     width: 100%;
     z-index: 3;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        padding: 2rem 0;
+        position: fixed;
+    }
 }
 
 .rating {
@@ -329,7 +338,7 @@ html {
         display: none;
 
         @media (min-width: map-get($grid-breakpoints, md)) {
-            display: flex;
+            display: block;
         }
     }
 

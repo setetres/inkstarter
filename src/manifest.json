@@ -1,6 +1,6 @@
 {
-    "background_color": "#ffffff",
-    "name": "Sete Três",
+    "background_color": "#000000",
+    "name": "InkStarter",
     "description": "",
     "display": "standalone",
     "icons": [{
@@ -9,7 +9,7 @@
     }],
     "start_url": "/",
     "orientation": "portrait-primary",
-    "short_name": "Sete Três",
-    "theme_color": "#0074d9",
+    "short_name": "InkStarter",
+    "theme_color": "#000000",
     "version": "1.0.0"
 }
