@@ -188,10 +188,14 @@ html {
         font-size: 2.5rem;
         font-weight: 700;
         justify-content: center;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
         text-align: center;
         text-transform: uppercase;
         width: 30%;
+
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            padding: 1rem 2rem;
+        }
     }
 
     &__right {
@@ -201,8 +205,12 @@ html {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.2rem;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
         text-transform: uppercase;
+
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            padding: 1rem 2rem;
+        }
     }
 
     ul {
@@ -316,6 +324,14 @@ html {
     height: 100%;
     line-height: 1.8rem;
     position: relative;
+
+    &-wrapper {
+        display: none;
+
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            display: flex;
+        }
+    }
 
     blockquote {
         bottom: 0;
