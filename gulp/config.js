@@ -13,7 +13,7 @@ var config = {
     },
     'root': {
         'src': [
-            './src/*.{ico,json,js,mp3}'
+            './src/*.{ico,json,js,mp3,html}'
         ],
         'dest': './dist'
     },
