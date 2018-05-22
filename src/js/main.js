@@ -1,4 +1,4 @@
-/* global $, document, window, FastClick, setTimeout */
+/* global $, document, FastClick, setTimeout */
 
 (function() {
     'use strict';
@@ -19,16 +19,6 @@
         $('.fit-video__close').on('click', function() {
             $('.fit-video').removeClass('fit-video--active');
             return false;
-        });
-
-        // Load
-
-        $(window).on('load', function() {
-        });
-
-        // Resize
-
-        $(window).on('debouncedresize', function() {
         });
 
         // Quotes
