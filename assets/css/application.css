@@ -1,0 +1,9 @@
+/* ./assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  /* background-color: rgba(16, 185, 129, .1); */
+  background-color: rgba(251, 191, 36, 0.1);
+}
