@@ -8,7 +8,8 @@ export default {
       lang: 'en',
     },
     bodyAttrs: {
-      class: 'overflow-hidden w-screen min-h-screen select-none',
+      class:
+        'overflow-x-hidden overflow-y-scroll 2xl:overflow-y-hidden w-full min-h-screen select-none',
     },
     title: 'InkStarter',
     meta: [
@@ -21,7 +22,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Since 2008.',
+        content:
+          'Would you tattoo a random drawing made by a complete stranger?',
       },
 
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -29,7 +31,8 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Since 2008.',
+        content:
+          'Would you tattoo a random drawing made by a complete stranger?',
       },
       {
         hid: 'og:image',
@@ -55,7 +58,8 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Since 2008.',
+        content:
+          'Would you tattoo a random drawing made by a complete stranger?',
       },
       {
         hid: 'twitter:image',
